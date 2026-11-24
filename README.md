@@ -39,32 +39,10 @@ RBAC	Role-based navigation and permission-aware interfaces
 
 🏗️ System Architecture
 StockFlow follows a domain-oriented architecture that separates presentation, application state, and business transaction logic.
-                  ┌─────────────────────────────┐
-                  │       Next.js App Shell     │
-                  │   Dashboard & Navigation   │
-                  └──────────────┬──────────────┘
-                                 │
-                                 ▼
-                  ┌─────────────────────────────┐
-                  │       React Context        │
-                  │    AppProvider + Reducer    │
-                  └──────────────┬──────────────┘
-                                 │
-             ┌───────────────────┼───────────────────┐
-             │                   │                   │
-             ▼                   ▼                   ▼
-      ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-      │  Inventory  │     │    Sales    │     │  Purchase   │
-      │   Engine    │     │   Engine    │     │   Engine    │
-      └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
-             │                   │                   │
-             └───────────────────┼───────────────────┘
-                                 │
-                                 ▼
-                  ┌─────────────────────────────┐
-                  │       Analytics Engine      │
-                  │  Valuation, COGS & Margins  │
-                  └─────────────────────────────┘
+
+<p align="center">
+  <img src="/public/Architecture_sasthasoft.png" alt="Architure Diagram of SasthaSoft" />
+  </p>
 Architectural Principles
 1. Domain-Driven Business Engines
 Business logic is separated into independent domain engines.
@@ -263,7 +241,6 @@ Mint Surface	#EBF8F5	KPI cards
 Turquoise	#55C5D2	Metric accents
 Teal	#11877E	Primary actions
 
-
 UI/UX Highlights
 - Double-docked desktop navigation.
 - Responsive mobile navigation drawer.
@@ -273,15 +250,6 @@ UI/UX Highlights
 - Interactive analytics charts.
 - Custom empty states.
 - Hydration-safe chart rendering.
-🧪 Testing & Quality Assurance
-StockFlow includes automated business logic tests using the Node.js native test runner and TypeScript execution through tsx.
-Test Results
-58 / 58 tests passing
-Test Suite	Tests
-Business Engine	13
-Analytics Engine	20
-Master Data Management	25
-Total	58
 
 
 Verified Scenarios
@@ -297,50 +265,7 @@ Verified Scenarios
 - Employee and customer validation.
 - Supplier onboarding.
 - State mutations and demo reset.
-Code Quality
-Check	Result
-Automated Tests	58/58 Passing
-ESLint	0 Warnings
-TypeScript	0 Compilation Errors
-Production Build	17/17 Routes Compiled
 
-
-⚙️ Getting Started
-Prerequisites
-Make sure you have installed:
-- Node.js
-- npm
-- Git
-1. Clone Repository
-git clone YOUR_REPOSITORY_URL
-2. Navigate to Project
-cd stockflow
-3. Install Dependencies
-npm install
-4. Start Development Server
-npm run dev
-5. Open Application
-Visit:
-http://localhost:3000
-No external database or cloud infrastructure is required for the current seeded demo experience.
-Available Commands
-# Development
-npm run dev
-
-# Production build
-npm run build
-
-# Start production server
-npm run start
-
-# Lint
-npm run lint
-
-# Run automated tests
-npm test
-
-# TypeScript verification
-npx tsc --noEmit
 🧭 Recommended Evaluation Journey
 Explore StockFlow through this five-minute walkthrough:
 1. Dashboard: Review executive metrics and inventory analytics.
