@@ -96,7 +96,7 @@ export function Sidebar({ mobileOpen = false, onCloseMobile }: SidebarProps) {
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-bold text-base tracking-tight text-navy">StockFlow</span>
+                <span className="font-bold text-base tracking-tight text-navy">SasthaSoft</span>
                 <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-mint text-teal border border-teal/20">
                   Nexus
                 </span>
@@ -138,8 +138,8 @@ export function Sidebar({ mobileOpen = false, onCloseMobile }: SidebarProps) {
                     type="button"
                     onClick={() => setDemoRole(role)}
                     className={`py-1.5 px-2 rounded-lg text-center text-xs font-bold transition-all ${isSelected
-                        ? 'bg-navy text-white shadow-subtle'
-                        : 'bg-white border border-border text-text-secondary hover:text-navy hover:bg-mint/60'
+                      ? 'bg-navy text-white shadow-subtle'
+                      : 'bg-white border border-border text-text-secondary hover:text-navy hover:bg-mint/60'
                       }`}
                   >
                     {cfg.badgeLabel}
@@ -212,8 +212,8 @@ export function Sidebar({ mobileOpen = false, onCloseMobile }: SidebarProps) {
                   href={item.href}
                   onClick={onCloseMobile}
                   className={`flex items-center justify-between px-3 py-2.5 rounded-lg text-xs font-semibold transition-all ${active
-                      ? 'bg-navy text-white shadow-subtle'
-                      : 'text-text-secondary hover:bg-mint/40 hover:text-navy'
+                    ? 'bg-navy text-white shadow-subtle'
+                    : 'text-text-secondary hover:bg-mint/40 hover:text-navy'
                     }`}
                 >
                   <div className="flex items-center gap-2.5">
@@ -225,8 +225,8 @@ export function Sidebar({ mobileOpen = false, onCloseMobile }: SidebarProps) {
                     {badge && (
                       <span
                         className={`text-[9px] font-bold px-1.5 py-0.2 rounded-full border ${active
-                            ? 'bg-turquoise text-navy border-transparent'
-                            : badge.bg
+                          ? 'bg-turquoise text-navy border-transparent'
+                          : badge.bg
                           }`}
                       >
                         {badge.text}

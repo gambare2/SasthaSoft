@@ -1,4 +1,4 @@
-📦 StockFlow
+📦 SasthaSoft
 Enterprise Inventory & Supply Chain Management ERP
 <p align="center">
   <strong>A connected business operations platform for modern inventory, procurement, sales, and warehouse management.</strong>
@@ -11,12 +11,12 @@ Enterprise Inventory & Supply Chain Management ERP
   <img src="https://img.shields.io/badge/ESLint-0%20Warnings-brightgreen?logo=eslint" alt="ESLint: 0 warnings" />
   <img src="https://img.shields.io/badge/RBAC-3%20Roles-indigo" alt="Three RBAC roles" />
 </p>🚀 Overview
-StockFlow is an enterprise-oriented Inventory and Supply Chain Management ERP designed to simplify and connect essential business operations.
+SasthaSoft is an enterprise-oriented Inventory and Supply Chain Management ERP designed to simplify and connect essential business operations.
 
-Built with Next.js 14, React 18, TypeScript, and Tailwind CSS, StockFlow brings inventory, sales, procurement, warehouses, workforce management, and business analytics into one unified operational interface.
+Built with Next.js 14, React 18, TypeScript, and Tailwind CSS, SasthaSoft brings inventory, sales, procurement, warehouses, workforce management, and business analytics into one unified operational interface.
 
-Unlike disconnected inventory tools, StockFlow implements interconnected business workflows where important transactions produce corresponding inventory movements, audit records, and updated business metrics.
-What makes StockFlow different?
+Unlike disconnected inventory tools, SasthaSoft implements interconnected business workflows where important transactions produce corresponding inventory movements, audit records, and updated business metrics.
+What makes SasthaSoft different?
 - Connected Operations: Sales, purchases, inventory, and analytics work together through shared business engines.
 - Multi-Warehouse Management: Manage inventory across multiple warehouse facilities.
 - Transaction Integrity: Maintain a stock movement history with transaction reversals.
@@ -38,7 +38,7 @@ RBAC	Role-based navigation and permission-aware interfaces
 
 
 🏗️ System Architecture
-StockFlow follows a domain-oriented architecture that separates presentation, application state, and business transaction logic.
+SasthaSoft follows a domain-oriented architecture that separates presentation, application state, and business transaction logic.
 
 <p align="center">
   <img src="/public/fonts/Architecture_sasthasoft.png" alt="Architure Diagram of SasthaSoft" />
@@ -64,7 +64,7 @@ PURCHASE_REVERSAL	Reverse previously received inventory
 
 This ensures that stock changes have an associated transaction history rather than silently overwriting inventory quantities.
 3. Centralized State Management
-StockFlow uses React Context and useReducer to maintain application state.
+SasthaSoft uses React Context and useReducer to maintain application state.
 
 Key capabilities:
 - Deterministic state transitions.
@@ -73,7 +73,7 @@ Key capabilities:
 - SSR hydration safeguards.
 - Demo data restoration.
 👥 Role-Based Access Control
-StockFlow provides three distinct role-based operational experiences.
+SasthaSoft provides three distinct role-based operational experiences.
 Role	Demo Persona	Primary Responsibility
 Administrator	Rajesh Sharma	Enterprise oversight
 Manager	Priya Sundaram	Warehouse operations
@@ -112,7 +112,7 @@ Users evaluating the application can switch between Admin, Manager, and Employee
 Implementation note: The current implementation demonstrates role-based application experiences. Production deployment would require server-side authentication, authorization, and enforcement of permissions.
 
 🔄 Connected Business Workflow Engine
-One of StockFlow's primary architectural strengths is its connected transaction workflow.
+One of SasthaSoft's primary architectural strengths is its connected transaction workflow.
 1. Procurement Workflow
 Create Purchase Order
          │
@@ -157,12 +157,12 @@ Create Sales Order
          ▼
  Update Revenue & Analytics
 3. Dynamic Inventory Monitoring
-StockFlow automatically evaluates inventory thresholds.
+SasthaSoft automatically evaluates inventory thresholds.
 - LOW_STOCK: Quantity reaches or falls below the minimum stock level.
 - OUT_OF_STOCK: Available quantity reaches zero.
 - Low-stock warnings surface across dashboard alerts and navigation indicators.
 4. Transaction Reversals
-StockFlow preserves transaction history when transactions are cancelled.
+SasthaSoft preserves transaction history when transactions are cancelled.
 - Cancel confirmed sale → SALE_REVERSAL.
 - Cancel received purchase → PURCHASE_REVERSAL.
 This approach maintains historical movement records instead of deleting previously recorded stock transactions.
@@ -233,7 +233,7 @@ This approach maintains historical movement records instead of deleting previous
 - Warehouse operations.
 - Employee activities.
 🎨 Design System
-StockFlow uses a custom enterprise design system inspired by modern SaaS interfaces.
+SasthaSoft uses a custom enterprise design system inspired by modern SaaS interfaces.
 Color Palette
 Color	Hex	Usage
 Deep Navy	#111C2E	Analytical panels
@@ -267,7 +267,7 @@ Verified Scenarios
 - State mutations and demo reset.
 
 🧭 Recommended Evaluation Journey
-Explore StockFlow through this five-minute walkthrough:
+Explore SasthaSoft through this five-minute walkthrough:
 1. Dashboard: Review executive metrics and inventory analytics.
 2. Procurement: Receive a pending purchase order and observe inventory changes.
 3. Sales: Create and confirm a sales order and observe stock deduction.
@@ -288,7 +288,7 @@ Code Quality	ESLint, TypeScript
 
 
 🔮 Future Development Opportunities
-Potential directions for evolving StockFlow into a more comprehensive enterprise ERP include:
+Potential directions for evolving SasthaSoft into a more comprehensive enterprise ERP include:
 - Persistent database-backed inventory.
 - Multi-tenant organization management.
 - Server-side RBAC enforcement.
@@ -302,7 +302,7 @@ Potential directions for evolving StockFlow into a more comprehensive enterprise
 These are potential future enhancements, not claims about currently implemented functionality.
 📌 Project Information
 Attribute	Details
-Project	StockFlow
+Project	SasthaSoft
 Category	Enterprise Inventory & Supply Chain Management ERP
 Architecture	Domain-Oriented Business Engines
 Frontend	Next.js + React + TypeScript
@@ -315,5 +315,5 @@ Developed For	SasthaSoft Freelance Full Stack Developer Technical Evaluation
   <strong>Built with precision. Designed for connected business operations.</strong>
   <br />
   <br />
-  <strong>StockFlow — Bringing Inventory, Procurement, Sales & Analytics Together.</strong>
+  <strong>SasthaSoft — Bringing Inventory, Procurement, Sales & Analytics Together.</strong>
 </p>

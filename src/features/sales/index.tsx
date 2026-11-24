@@ -226,11 +226,10 @@ export function SalesList() {
 
       {actionMessage && (
         <div
-          className={`p-3 text-xs rounded-xl flex items-center justify-between animate-in fade-in duration-150 ${
-            actionMessage.isError
-              ? 'bg-danger/10 text-danger border border-danger/20'
-              : 'bg-mint text-teal border border-[#D5ECE7]'
-          }`}
+          className={`p-3 text-xs rounded-xl flex items-center justify-between animate-in fade-in duration-150 ${actionMessage.isError
+            ? 'bg-danger/10 text-danger border border-danger/20'
+            : 'bg-mint text-teal border border-[#D5ECE7]'
+            }`}
         >
           <div className="flex items-center gap-2">
             {actionMessage.isError ? <AlertCircle className="w-4 h-4 shrink-0" /> : <CheckCircle className="w-4 h-4 shrink-0" />}
@@ -349,13 +348,12 @@ export function SalesList() {
                       <td className="py-3 px-4 font-bold text-navy text-right">{formatCurrency(so.totalAmount)}</td>
                       <td className="py-3 px-4 text-center">
                         <span
-                          className={`inline-block px-2.5 py-0.5 rounded-full text-[9px] font-bold ${
-                            isConfirmed
-                              ? 'bg-pale-cyan text-teal border border-turquoise/30'
-                              : isCancelled
+                          className={`inline-block px-2.5 py-0.5 rounded-full text-[9px] font-bold ${isConfirmed
+                            ? 'bg-pale-cyan text-teal border border-turquoise/30'
+                            : isCancelled
                               ? 'bg-danger/10 text-danger border border-danger/20'
                               : 'bg-mint text-navy border border-[#D5ECE7]'
-                          }`}
+                            }`}
                         >
                           {so.status}
                         </span>
@@ -623,9 +621,8 @@ export function SalesCreateForm() {
               return (
                 <div
                   key={index}
-                  className={`p-3.5 rounded-xl border flex flex-col sm:flex-row items-center gap-3 transition-colors ${
-                    hasInsufficient ? 'bg-danger/5 border-danger/30' : 'bg-mint/40 border-[#E5E9EB]'
-                  }`}
+                  className={`p-3.5 rounded-xl border flex flex-col sm:flex-row items-center gap-3 transition-colors ${hasInsufficient ? 'bg-danger/5 border-danger/30' : 'bg-mint/40 border-[#E5E9EB]'
+                    }`}
                 >
                   <div className="flex-1 w-full">
                     <div className="flex items-center justify-between mb-1">
@@ -819,13 +816,12 @@ export function SalesDetailView({ id }: { id: string }) {
           <div className="flex items-center gap-2">
             <h1 className="text-xl font-bold text-navy">{order.orderNumber}</h1>
             <span
-              className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
-                isConfirmed
-                  ? 'bg-pale-cyan text-teal border border-turquoise/30'
-                  : isCancelled
+              className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${isConfirmed
+                ? 'bg-pale-cyan text-teal border border-turquoise/30'
+                : isCancelled
                   ? 'bg-danger/10 text-danger border border-danger/20'
                   : 'bg-mint text-navy border border-[#D5ECE7]'
-              }`}
+                }`}
             >
               {order.status}
             </span>
@@ -887,7 +883,7 @@ export function SalesDetailView({ id }: { id: string }) {
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-6 border-b border-[#E5E9EB]">
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-black text-xl tracking-tight text-navy">STOCKFLOW</span>
+              <span className="font-black text-xl tracking-tight text-navy">SasthaSoft</span>
               <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-mint text-teal border border-[#D5ECE7]">
                 Tax Invoice
               </span>

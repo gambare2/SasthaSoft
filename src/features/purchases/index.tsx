@@ -251,11 +251,10 @@ export function PurchasesList() {
 
       {actionMessage && (
         <div
-          className={`p-3 text-xs rounded-xl flex items-center justify-between animate-in fade-in duration-150 ${
-            actionMessage.isError
-              ? 'bg-danger/10 text-danger border border-danger/20'
-              : 'bg-mint text-teal border border-[#D5ECE7]'
-          }`}
+          className={`p-3 text-xs rounded-xl flex items-center justify-between animate-in fade-in duration-150 ${actionMessage.isError
+            ? 'bg-danger/10 text-danger border border-danger/20'
+            : 'bg-mint text-teal border border-[#D5ECE7]'
+            }`}
         >
           <div className="flex items-center gap-2">
             {actionMessage.isError ? <AlertCircle className="w-4 h-4 shrink-0" /> : <CheckCircle className="w-4 h-4 shrink-0" />}
@@ -409,13 +408,12 @@ export function PurchasesList() {
                       <td className="py-3 px-4 text-center">
 
                         <span
-                          className={`inline-block px-2.5 py-0.5 rounded-full text-[9px] font-bold ${
-                            isReceived
-                              ? 'bg-mint text-teal border border-[#D5ECE7]'
-                              : isCancelled
+                          className={`inline-block px-2.5 py-0.5 rounded-full text-[9px] font-bold ${isReceived
+                            ? 'bg-mint text-teal border border-[#D5ECE7]'
+                            : isCancelled
                               ? 'bg-danger/10 text-danger border border-danger/20'
                               : 'bg-pale-cyan text-navy border border-turquoise/30'
-                          }`}
+                            }`}
                         >
                           {po.status}
                         </span>
@@ -484,9 +482,8 @@ export function PurchasesList() {
           <div className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-[#E5E9EB] p-6 space-y-4 animate-in fade-in zoom-in-95 duration-150">
             <div className="flex items-start gap-3">
               <div
-                className={`p-2 rounded-xl shrink-0 ${
-                  confirmModal.type === 'RECEIVE' ? 'bg-mint text-teal border border-[#D5ECE7]' : 'bg-danger/10 text-danger border border-danger/20'
-                }`}
+                className={`p-2 rounded-xl shrink-0 ${confirmModal.type === 'RECEIVE' ? 'bg-mint text-teal border border-[#D5ECE7]' : 'bg-danger/10 text-danger border border-danger/20'
+                  }`}
               >
                 {confirmModal.type === 'RECEIVE' ? <Truck className="w-5 h-5" /> : <Ban className="w-5 h-5" />}
               </div>
@@ -500,8 +497,8 @@ export function PurchasesList() {
                   {confirmModal.type === 'RECEIVE'
                     ? 'Receiving this order will immediately increment product stock quantities in the destination warehouse and record stock intake movement logs.'
                     : confirmModal.isReceived
-                    ? 'WARNING: This purchase order has already been received. Cancelling will trigger an authorized reverse stock deduction to restore prior inventory balances.'
-                    : 'Are you sure you want to cancel this pending purchase order?'}
+                      ? 'WARNING: This purchase order has already been received. Cancelling will trigger an authorized reverse stock deduction to restore prior inventory balances.'
+                      : 'Are you sure you want to cancel this pending purchase order?'}
                 </p>
               </div>
             </div>
@@ -517,11 +514,10 @@ export function PurchasesList() {
               <button
                 type="button"
                 onClick={handleConfirmAction}
-                className={`px-4 py-1.5 text-xs font-semibold text-white rounded-lg shadow-2xs ${
-                  confirmModal.type === 'RECEIVE'
-                    ? 'bg-teal hover:bg-teal-hover'
-                    : 'bg-danger hover:bg-danger/90'
-                }`}
+                className={`px-4 py-1.5 text-xs font-semibold text-white rounded-lg shadow-2xs ${confirmModal.type === 'RECEIVE'
+                  ? 'bg-teal hover:bg-teal-hover'
+                  : 'bg-danger hover:bg-danger/90'
+                  }`}
               >
                 {confirmModal.type === 'RECEIVE' ? 'Confirm Inbound Intake' : 'Authorize Cancellation'}
               </button>
@@ -923,13 +919,12 @@ export function PurchasesDetailView({ id }: { id: string }) {
             <h1 className="text-xl font-bold text-navy">{po.orderNumber}</h1>
 
             <span
-              className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
-                isReceived
-                  ? 'bg-mint text-teal border border-[#D5ECE7]'
-                  : isCancelled
+              className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${isReceived
+                ? 'bg-mint text-teal border border-[#D5ECE7]'
+                : isCancelled
                   ? 'bg-danger/10 text-danger border border-danger/20'
                   : 'bg-pale-cyan text-navy border border-turquoise/30'
-              }`}
+                }`}
             >
               {po.status}
             </span>
@@ -982,11 +977,10 @@ export function PurchasesDetailView({ id }: { id: string }) {
 
       {feedback && (
         <div
-          className={`p-3.5 text-xs rounded-xl flex items-center justify-between print:hidden ${
-            feedback.isError
-              ? 'bg-danger/10 text-danger border border-danger/20'
-              : 'bg-mint text-teal border border-[#D5ECE7]'
-          }`}
+          className={`p-3.5 text-xs rounded-xl flex items-center justify-between print:hidden ${feedback.isError
+            ? 'bg-danger/10 text-danger border border-danger/20'
+            : 'bg-mint text-teal border border-[#D5ECE7]'
+            }`}
         >
           <div className="flex items-center gap-2">
             {feedback.isError ? <AlertCircle className="w-4 h-4 shrink-0" /> : <CheckCircle className="w-4 h-4 shrink-0" />}
@@ -1007,7 +1001,7 @@ export function PurchasesDetailView({ id }: { id: string }) {
         <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-6 border-b border-[#E5E9EB]">
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-black text-xl tracking-tight text-navy">STOCKFLOW</span>
+              <span className="font-black text-xl tracking-tight text-navy">SasthaSoft</span>
               <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-mint text-teal border border-[#D5ECE7]">
                 Procurement
               </span>
@@ -1021,13 +1015,12 @@ export function PurchasesDetailView({ id }: { id: string }) {
             <h2 className="text-xl font-black text-navy mt-0.5">{po.orderNumber}</h2>
             <div className="inline-block mt-1">
               <span
-                className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
-                  isReceived
-                    ? 'bg-mint text-teal border border-[#D5ECE7]'
-                    : isCancelled
+                className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold ${isReceived
+                  ? 'bg-mint text-teal border border-[#D5ECE7]'
+                  : isCancelled
                     ? 'bg-danger/10 text-danger border border-danger/20'
                     : 'bg-pale-cyan text-navy border border-turquoise/30'
-                }`}
+                  }`}
               >
                 {po.status}
               </span>
@@ -1169,11 +1162,10 @@ export function PurchasesDetailView({ id }: { id: string }) {
                       <td className="py-2.5 px-3 font-semibold text-navy">{m.productName}</td>
                       <td className="py-2.5 px-3">
                         <span
-                          className={`px-2 py-0.5 rounded-full text-[9px] font-bold ${
-                            m.type === 'PURCHASE'
-                              ? 'bg-mint text-teal border border-[#D5ECE7]'
-                              : 'bg-danger/10 text-danger border border-danger/20'
-                          }`}
+                          className={`px-2 py-0.5 rounded-full text-[9px] font-bold ${m.type === 'PURCHASE'
+                            ? 'bg-mint text-teal border border-[#D5ECE7]'
+                            : 'bg-danger/10 text-danger border border-danger/20'
+                            }`}
                         >
                           {m.type}
                         </span>
