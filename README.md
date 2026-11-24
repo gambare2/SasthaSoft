@@ -41,7 +41,7 @@ RBAC	Role-based navigation and permission-aware interfaces
 StockFlow follows a domain-oriented architecture that separates presentation, application state, and business transaction logic.
 
 <p align="center">
-  <img src="/public/Architecture_sasthasoft.png" alt="Architure Diagram of SasthaSoft" />
+  <img src="/public/fonts/Architecture_sasthasoft.png" alt="Architure Diagram of SasthaSoft" />
   </p>
 Architectural Principles
 1. Domain-Driven Business Engines
